@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamk Weather App</title>
+    <script src="./scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body onload="latestThirty()">
+
+  <div class="background">
+    <img src="./tampere.jpg" alt="" />
+  </div>
+
+	<div class="header">
+		<div class="menu">
+			<ul>
+				<li><a href="#" style="font-size: 34px;" onclick="latestThirty()">Tamk Weather App</a></li>
+			</ul>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="#" onclick="latestThirty()">Main Page</a></li>
+				<li><a href="#" onclick="latestTemps()">Temperature</a></li>
+				<li><a href="#" onclick="windSpeed()">Wind Speed</a></li>
+        <li><a href="#" onclick="infoPage()">Page Info</a></li>
+			</ul>
+		</div>
+	</div>
+
+<h1 id="header" style="text-align: center;"></h1>
+
+	<table id="latestThirty">
+        <thead>
+          <tr>
+            <th>Row Number</th>
+            <th>Measurement Day</th>
+            <th>Measurement Time</th>
+            <th>Measurement Type</th>
+            <th>Measured Value</th>
+          </tr>
+        </thead>
+        <tbody class="latestThirtyBody"></tbody>
+     </table>
+
+      <table id="temperatureTable">
+        <thead>
+          <tr>
+            <th>Row Number</th>
+            <th>Measurement Day</th>
+            <th>Measurement Time</th>
+            <th>Measurement Value</th>
+          </tr>
+        </thead>
+        <tbody class="temperatureTableBody"></tbody>
+      </table>
+
+      <table id="windSpeedTable">
+        <thead>
+          <tr>
+            <th>Row Number</th>
+            <th>Measurement Day</th>
+            <th>Measurement Time</th>
+            <th>Measurement Value</th>
+          </tr>
+        </thead>
+        <tbody class="windSpeedTableBody"></tbody>
+     </table>
+
+      <div id="infoPage">
+
+        <p>Name: Anton Lahtinen</p>
+        <p>Email: anton.lahtinen@tuni.fi</p>
+        <p>This project was part of TAMK's Web Development course</p>
+
+      </div>
+
+
+</body>
+</html>
