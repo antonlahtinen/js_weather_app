@@ -1,5 +1,5 @@
 function latestThirty() {
-	fetch('http://webapi19sa-1.course.tamk.cloud/v1/weather')
+	fetch('')
 		.then(response => response.json())
 		.then(data => {
 
@@ -41,7 +41,7 @@ function latestThirty() {
 
 
 function latestTemps() {
-	fetch('http://webapi19sa-1.course.tamk.cloud/v1/weather/temperature')
+	fetch('')
 		.then(response => response.json())
 		.then(data => {
 
@@ -77,7 +77,7 @@ function latestTemps() {
 }
 
 function windSpeed() {
-	fetch('http://webapi19sa-1.course.tamk.cloud/v1/weather/wind_speed')
+	fetch('')
 		.then(response => response.json())
 		.then(data => {
 
