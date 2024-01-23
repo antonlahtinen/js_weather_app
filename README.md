@@ -1,17 +1,13 @@
 # JavaScript Weather App
 
-A simple web application that fetches weather data from TAMK's weather station using backend API and displays it to the user.
+A simple web application that fetches weather data from TAMK's weather station using REST and displays it to the user.
 
-# Usage
-Clone the repository or download the zip file and unzip it.
-Open index.html file in a web browser.
-
-Technologies Used
+# Technologies Used
 - HTML
 - CSS
 - JavaScript
 
-# Credits
+# Info
 This application was developed by Anton Lahtinen
 
 # Example Picture
